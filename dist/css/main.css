@@ -7,8 +7,9 @@
 
 body {
   font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
   background: linear-gradient(#af67e9, #6565e7);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,24 +19,52 @@ main {
   width: 90%;
   max-width: 550px;
   background: url("../images/bg-pattern-mobile.svg") no-repeat top #fff;
-  text-align: center;
   border-radius: 20px;
+  box-shadow: 0px 20px 45px #4a4b5e;
 }
-main .header {
+main .card-graphics {
   height: 100px;
 }
-main .body {
-  padding: 3rem;
-}
-
-.graphic-mobile {
+main .card-graphics .graphic-mobile {
   width: 225px;
   margin: auto;
   position: relative;
   top: -100px;
 }
+main .card-text {
+  padding: 3rem;
+}
+main .card-text h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main .card-text .faq-group {
+  border-bottom: 1px solid #787887;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+main .card-text .faq-group .q-group {
+  display: flex;
+  justify-content: space-between;
+}
+main .card-text .faq-group .q-group .q-text {
+  color: #4a4b5e;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+main .card-text .faq-group .q-group .q-text:hover {
+  color: #f47c57;
+}
+main .card-text .faq-group .q-group img {
+  height: 50%;
+  padding-top: 2%;
+}
+main .card-text .faq-group .a-group .a-text {
+  width: 95%;
+  color: #787887;
+}
 
-.attribution {
+footer .attribution {
   display: none;
 }
 

@@ -16,6 +16,10 @@ $neutral-1: hsl(237, 12%, 33%);
 // Dark grayish blue
 $neutral-2: hsl(240, 6%, 50%);
 
+// ### gradient
+$gradient-1: hsl(273, 75%, 66%);
+$gradient-2: hsl(240, 73%, 65%);
+
 * {
   margin: 0;
   padding: 0;
@@ -24,8 +28,9 @@ $neutral-2: hsl(240, 6%, 50%);
 
 body {
   font-size: 12px;
-  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-  height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: linear-gradient($gradient-1, $gradient-2);
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,28 +40,66 @@ main {
   width: 90%;
   max-width: 550px;
   background: url('../images/bg-pattern-mobile.svg') no-repeat top #fff;
-  text-align: center;
   border-radius: 20px;
+  box-shadow: 0px 20px 45px $neutral-1;
 
-  .header {
-    // background: $neutral-1;
+  .card-graphics {
     height: 100px;
+
+    .graphic-mobile {
+      width: 225px;
+      margin: auto;
+      position: relative;
+      top: -100px;
+    }    
   }
 
-  .body {
+  .card-text {
     padding: 3rem;
-  }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .faq-group {
+      border-bottom: 1px solid $neutral-2;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+
+      .q-group {
+        display: flex;
+        justify-content: space-between;
+
+        .q-text {
+          color: $neutral-1;
+          cursor: pointer;
+          margin-bottom: 1rem;
+    
+          &:hover {
+            color: $primary-2;
+          }
+        }
   
+        img {
+          height: 50%;
+          padding-top: 2%;
+        }
+      }
+
+      .a-group {
+        .a-text {
+          width: 95%;
+          color: $neutral-2;
+          // display: none;
+        }   
+      }
+    }
+  } 
 }
 
-
-.graphic-mobile {
-  width: 225px;
-  margin: auto;
-  position: relative;
-  top: -100px;
-}
-
-.attribution {
-  display: none;
+footer {
+  .attribution {
+    display: none;
+  }
 }
