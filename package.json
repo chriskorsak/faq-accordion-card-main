@@ -4,12 +4,16 @@
   "description": "FAQ accordion card coding challenge",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "sass": "sass --watch scss:dist/css"
   },
   "homepage": "https://chriskorsak.github.io/faq-accordion-card-main",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^3.2.3"
+  },
+  "devDependencies": {
+    "sass": "^1.43.4"
   }
 }
