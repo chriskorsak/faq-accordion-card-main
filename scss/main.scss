@@ -1,0 +1,62 @@
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+// font-family: 'Kumbh Sans', sans-serif;
+
+//variables
+
+// ### Primary Text
+// Very dark desaturated blue
+$primary-1: hsl(238, 29%, 16%);
+// Soft red
+$primary-2: hsl(14, 88%, 65%);
+
+// ### Neutral Text
+// Very dark grayish blue
+$neutral-1: hsl(237, 12%, 33%);
+// Dark grayish blue
+$neutral-2: hsl(240, 6%, 50%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 90%;
+  max-width: 550px;
+  background: url('../images/bg-pattern-mobile.svg') no-repeat top #fff;
+  text-align: center;
+  border-radius: 20px;
+
+  .header {
+    // background: $neutral-1;
+    height: 100px;
+  }
+
+  .body {
+    padding: 3rem;
+  }
+  
+}
+
+
+.graphic-mobile {
+  width: 225px;
+  margin: auto;
+  position: relative;
+  top: -100px;
+}
+
+.attribution {
+  display: none;
+}

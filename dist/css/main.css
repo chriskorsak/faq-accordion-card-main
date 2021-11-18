@@ -1,3 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-size: 12px;
+  background: linear-gradient(#af67e9, #6565e7);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 90%;
+  max-width: 550px;
+  background: url("../images/bg-pattern-mobile.svg") no-repeat top #fff;
+  text-align: center;
+  border-radius: 20px;
+}
+main .header {
+  height: 100px;
+}
+main .body {
+  padding: 3rem;
+}
+
+.graphic-mobile {
+  width: 225px;
+  margin: auto;
+  position: relative;
+  top: -100px;
+}
+
+.attribution {
+  display: none;
+}
 
 /*# sourceMappingURL=main.css.map */
